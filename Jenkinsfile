@@ -18,10 +18,10 @@ pipeline {
 
         stage('Run the SonarQube') {
             steps {
-                sh '''sonar-scanner \ 
-                -Dsonar.projectKey=idn-simple-app \ 
-                -Dsonar.sources=. \ 
-                -Dsonar.host.url=http://172.23.1.31:9000 \ 
+                sh '''sonar-scanner \
+                -Dsonar.projectKey=idn-simple-app \
+                -Dsonar.sources=. \
+                -Dsonar.host.url=http://172.23.1.31:9000 \
                 -Dsonar.login=sqp_1e57deabbb5e9082d47fbf687c73ae97ae2444d7
                 '''
             }
