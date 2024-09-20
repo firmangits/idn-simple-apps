@@ -1,6 +1,6 @@
 pipeline {
     agent {label 'devops-1-MFirmanA'}
-    tools {nodejs 'nodejs-18.16.0'}
+    tools {nodejs 'nodejs-20.17.0'}
 
     stages {
         stage('checkout GIT project') {
